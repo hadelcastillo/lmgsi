@@ -1,0 +1,189 @@
+<!-- Declaración del documento -->
+<!DOCTYPE html>
+<!-- Elemento raíz -->
+<html lang="es-ES">
+<!-- Cabecera, no visible -->
+	<head>
+<!-- Etiqueta con metadatos -->
+        <meta charset="UTF-8">
+<!-- Título en la pestaña -->
+		<title>Resolución de dudas MiniPC</title>
+<!-- Favicon descargado de Debian -->
+		<link rel="icon" href="./imagenes/favicon.ico" type="image/gif" sizes="16x16">
+<!-- Fin de la cabecera -->
+    </head>
+<!-- Cuerpo del documento -->
+	<body>
+<!-- Comienzo del header -->
+        <header>
+<!-- Comienzo del header:nav -->
+            <nav>
+<!-- Comienzo de la lista de header:nav:ul -->
+                <ul>
+                    Acceso a secciones:
+                    <li><a href="#tittle1">¿Qué buscamos?</a></li>
+                    <li><a href="#tittle2">¿Qué SO tenemos?</a></li>
+                    <li><a href="#tittle3">¿Qué CPU utilizaremos?</a></li>
+                    <li><a href="#recursosmultimedia">Recursos Multimedia</a></li>
+                    <li><a href="#abajo">Final de la página</a></li>
+<!-- Final de la lista de header:nav:ul -->
+                <ul>
+<!-- Final del header:nav -->
+            </nav>
+<!-- Final del header -->
+        </header>
+<!-- Comienzo del article -->
+        <article>
+<!-- Título #1 -->
+            <h1 id="tittle1">¿Qué estamos buscando?</h1>
+<!-- Párrafo #1 con ejemplo de italic-->
+                <p>Nos encontramos ante la tarea de encontrar un <em>MiniPC</em> que pueda realizar funciones de servidor.</p>
+<!-- Párrafo #2 con ejemplo de bold-->
+                <p>Estas funciones son <strong>excluyentes</strong>, si realiza una de ellas, no tendrá que realizar las demás. La lista de tareas que debe poder realizar es la siguiente:</p>
+<!-- Inicio de la lista desordenada -->
+                <ul>
+<!-- Item #1 de la lista desordenada -->
+                    <li>Firewall</li>
+<!-- Item #2 de la lista desordenada -->
+                    <li>HTPC</li>
+<!-- Item #3 de la lista desordenada -->
+                    <li>Steam Link</li>
+<!-- Item #4 de la lista desordenada -->
+                    <li>Servidor de ficheros</li>
+<!-- Item #5 de la lista desordenada -->
+                    <li>Servidor DNS</li>
+<!-- Item #6 de la lista desordenada -->
+                    <li>Servidor de VPN</li>
+<!-- Item #7 de la lista desordenada -->
+                    <li>Servidor de impresión</li>
+<!-- Fin de la lista desordenada -->
+                </ul>
+                <br/>
+<!-- Título #2 -->
+            <h3 id="tittle2"> ¿Qué sistema operativo vamos a ejecutar? </h3>
+<!-- Párrafo #3 con ejemplo de underline -->
+                <p>Podremos escoger un sistema operativo de esta lista, que se encuentra en orden de <u>prioridad descendente</u>:</p>
+                
+<!-- Inicio de la lista ordenada -->
+                <ol>
+<!-- Item #1 de la lista ordenada -->
+                    <li>GNU/Linux: Debian</li>
+<!-- Item #2 de la lista ordenada -->
+                    <li>GNU/Linux: Ubuntu</li>
+<!-- Item #3 de la lista ordenada -->
+                    <li>FREEBSD pfSense</li>
+<!-- Item #4 de la lista ordenada -->
+                    <li>Windows Server 2019</li>
+<!-- Item #5 de la lista ordenada -->
+                    <li>Mac OSX BigSur</li>
+<!-- Fin de la lista ordenada -->
+                </ol>        
+<!-- Enlace a sitio externo -->
+                <p>Ya que Debian es el favorito, podremos ver aquí su <a href='https://www.debian.org/doc/' target="_blank">documentación sobre Debian</a>.</p>
+                <br/>
+<!-- Título #3 -->
+            <h4 id="tittle3"> ¿Qué procesadores tenemos como opción? </h4>
+<!-- Tabla de CPU -->
+                <table border="1">
+<!-- Poner título a la tabla -->
+                    <caption>Tabla comparativa de CPU</caption>
+<!-- Comienzo de la primera fila (1) -->
+                    <tr>
+<!-- Primera columna como título (A) -->
+                        <th></th>
+<!-- Segunda columna como título (B) -->
+                        <th>Marca</th>
+<!-- Tercera columna como título (C) -->
+                        <th>Modelo</th>
+<!-- Cuarta columna como título (D) -->
+                        <th>Núcleos</th>
+<!-- Quinta columna como título (E) -->
+                        <th>Hilos</th>
+<!-- Sexta columna como título (F) -->
+                        <th>Consumo</th>
+<!-- Séptima columna como título (G) -->
+                        <th>Puntuación</th>
+<!-- Fin de la primera fila -->
+                    </tr>
+<!-- Comienzo de la segunda fila (2)  -->
+                    <tr>
+<!-- 2:A -->
+                        <td>#1</td>
+<!-- 2:B, unidas las celdas 2:B y 3:B  -->
+                        <td rowspan="2">Intel</td>
+<!-- 2:C -->
+                        <td>j4105</td>
+<!-- 2:D, unidas las celdas 2:D y 2:E -->
+                        <td colspan="2">4</td>       
+<!-- 2:F, unidas las celdas 2:F y 3:F -->
+                        <td rowspan="2">10W</td>   
+<!-- 2:G -->
+                        <td>2896</td> 
+                    </tr>    
+<!-- Comienzo de la tercera fila (3) -->
+                    <tr>
+<!-- 2:G -->
+                        <td>#2</td>
+<!-- 2:G -->
+                        <td>j5005</td>
+<!-- 2:G -->
+                        <td colspan="2">4</td>
+<!-- 2:G -->
+                        <td>3052</td> 
+                    </tr>
+<!-- Comienzo de la cuarta fila (4) -->
+                    <tr>
+<!-- 2:G -->
+                        <td>#3</td>
+<!-- 2:G -->
+                        <td>AMD</td>
+<!-- 2:G -->
+                        <td>R1606G</td>
+<!-- 2:G -->
+                        <td>2</td>   
+<!-- 2:G -->
+                        <td>4</td>   
+<!-- 2:G -->
+                        <td>15W</td>   
+<!-- 2:G -->
+                        <td>4166</td> 
+                    </tr>
+<!-- Etiqueta de cierre de la tabla de CPU -->
+                </table>
+                <br/>
+                <p>Puedes dar tu opinión en el <a href='./formulario/contacto.html' target="_blank">siguiente formulario</a>.</p>
+<!-- Final del article -->
+        </article>
+<!-- Comienzo del aside -->
+        <aside>
+            <h4 id="recursosmultimedia"> Recursos Multimedia </h4>
+<!-- Inserción del vídeo de YT -->
+            <p>En el siguiente vídeo de Youtube podremos ver alternativas a estos MiniPC:</p>         
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/uAxe2pAUY50" title="YouTube Mini PC" frameborder="2" allow="clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe>   
+            <br/>
+<!-- Inserción de GM con vista cenital -->
+            <p>Si nos decantamos por intel y todo sale mal, podemos ir a pedir explicaciones a sus <em>headquarters</em>.</p>         
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3170.0636495430253!2d-121.9659083!3d37.388327!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fc993f26d4cb1%3A0x5296bad63260ef5e!2s2200%20Mission%20College%20Blvd%2C%20Santa%20Clara%2C%20CA%2095054%2C%20EE.%20UU.!5e0!3m2!1ses-419!2ses!4v1669731253545!5m2!1ses-419!2ses" width="560" height="315" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<!-- Inserción de GM en modo street view -->
+            <p>El área de reclamaciones a la que acudiremos con un palo está entrando a la derecha.</p>         
+                <iframe src="https://www.google.com/maps/embed?pb=!4v1669730853953!6m8!1m7!1sx93-ZUYH4N2odn9WX7UHuw!2m2!1d37.3885842229685!2d-121.9632120307638!3f245.01200509351526!4f-19.089607164427463!5f0.7820865974627469" width="560" height="315" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<!-- Foto pequeña que se amplia al hacer clic -->
+            <p>Un ejemplo de MiniPC para esta labor sería este (Clic para ampliar)</p>         
+                <a href="./imagenes/fotofujitsu.jpg" target="_blank" ><img src="./imagenes/fotofujitsu.jpg" alt="Foto de un MiniPC Fujitsu" height="315" ></a>
+            <br/>
+<!-- Final del aside -->
+        </aside>
+<!-- Comienzo del footer -->
+        <footer>
+<!-- Línea de separación -->
+            <hr/>
+<!-- Comentario final  -->
+            <p>Última actualización el día 29-11-22 por Minombre Conmiape Llido</p>
+<!-- Final del footer -->
+        </footer>
+    <h6 id="abajo"></h6>    
+<!-- Fin del cuerpo del documento -->
+    </body>
+<!-- Fin del elemento raíz -->
+</html>
+

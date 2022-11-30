@@ -1,0 +1,120 @@
+<!-- Tipo de documento -->
+<!DOCTYPE html>
+<!-- Elemento raíz, html -->
+<html lang="es-ES">
+<!-- Inicio de la cabecera -->
+<head>
+<!-- Etiqueta meta para definir el conjunto de caracteres -->
+    <meta charset="URF-8">
+<!-- Título de la pestaña     -->
+    <title>Formulario de opinión</title>
+<!-- Enlace para poner el favicon de gimp  -->
+    <link rel="icon" href="../imagenes/gimpfavicon.png" tupe="image/gif" sizes="16x16">
+<!-- Final de la cabecera -->
+</head>
+<!-- Inicio del body -->
+<body>
+<!-- Título H2 de la página -->
+<h2>Bienvenido al formulario</h2>
+<!-- Párrafo con breve explicación -->
+<p>Aquí podrás dar tu opinión sobre el artículo anterior.</p><br/>
+<!-- Inicio del formulario -->
+    <form action="./respuestas.html" method="get">
+<!-- Para mantener los items del formulario ordenados, he creado una lista.  -->
+        <ul>
+<!-- Fieldset para añadir todo el formulario dentro de un recuadro  -->
+            <fieldset>
+<!-- Primera leyenda: identifico la información personal -->
+                <legend>Información personal:</legend>
+                <li>
+<!-- Etiqueta del input Nombre -->
+                    <label for="name">Nombre:</label>
+<!-- Input del nombre. Ejemplo con placeholder -->
+                    <input type="text" id="name" name="user_name" placeholder="First name"/>
+                </li>
+                <br/>
+                <li>
+<!-- Etiqueta del campo DNI -->
+                    <label for="dni">DNI:</label>
+<!-- Input del campo DNI. Ejemplo de validación con patrón. -->
+                    <input type="text" id="dni" name="dni" pattern="[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][A-Z]"/>
+                </li>
+                <br/>
+                <li>
+<!-- Etiqueta del campo teléfono. -->
+                    <label for="telefono">Teléfono:</label>
+<!--  Podría usar campo inputo type="tel" pero para el ejemplo de max-min me viene bien así. -->
+                    <input type="text" id="telefono" name="telefono" minlength="9" maxlength="9"/>
+                </li>
+                <br/>
+                <li>
+<!-- Etiqueta del campo Correo -->
+                    <label for="mail">Correo electrónico:</label>
+<!-- Input de correo con ejemplo de valor predefinido. -->
+                    <input type="email" id="mail" name="user_mail" value="notengomail@example.com"/>
+                </li>
+                <br/>
+                <li>
+<!-- Etiqueta del campo color -->
+                    <label for="color">¿Cuál es tu color favorito? </label>
+<!-- Input del campo color -->
+                    <input type="color" name="color" id="color">
+                </li>
+                <br/>
+<!-- Segunda leyenda, lo relacionado con el CPU -->
+                <legend>Relacionado con el CPU:</legend>   
+                <li>
+<!-- Etiqueta de la lista para seleccionar -->
+                    <label for="select">Escoge un CPU</label>
+<!-- Inicio del campo de selección -->
+                    <select id="select" name="select_cpu">
+<!-- Opciones del campo de selección -->
+                        <option value="j4105">Intel J4105</option>
+                        <option value="j5005">Intel J5005</option>
+                        <option value="r1606g">AMD R1606G</option>
+<!-- Final del campo de selección -->
+                    </select>
+                </li>
+                <br/>
+                <li>
+<!-- Etiqueta del campo datalist -->
+                    <label for="function"> ¿Qué función va a desempeñar? </label>
+<!-- Input del campo datalist -->
+                    <input list="functions" name="function" id="function">
+<!-- Inicio de la lista de opciones -->
+                    <datalist id="functions">
+<!-- Opciones de la lista del datalist -->
+                        <option value="Firewall">
+                        <option value="HTPC">
+                        <option value="Steam Link">
+                        <option value="Servidor de ficheros">
+                        <option value="Servidor DNS">
+                        <option value="Servidor de VPN">
+                        <option value="Servidor de impresión">
+<!-- Final de la lista de opciones -->
+                    </datalist>
+                </li>
+                <br/> 
+                <li>
+<!-- Etiqueta de el mensaje de texto -->
+                    <label for="msg">¿Realizará otra función?</label>
+<!-- Campo de textarea -->
+                    <textarea id="msg" name="user_message">Coméntalo aquí</textarea>
+                </li>
+                <br/>
+<!-- Tercera leyenda, paso a los botones -->
+                <legend>¿Has terminado?</legend>
+<!-- Elemento de lista con la clase botón -->
+                <li class="button">
+<!-- Botón con el tipo submit para enviar la info -->
+                    <button type="submit">Sí, todo es correcto y deseo enviar la información.</button>
+                </li>
+                <li class="button">
+<!-- Botón de tipo reset para resetear el formulario -->
+                    <button type="reset">Me arrepiento de todo, empecemos de nuevo. </button>
+                </li>
+            </fieldset>
+        </ul>
+    </form>
+</body>
+</html>
